@@ -459,7 +459,7 @@ window.addEventListener('load', function () {
     /**Listenner pour le form ajoutPrive */
     let currentRequete = window.location.search.substring(window.location.pathname.lastIndexOf('/'));
     if (currentRequete.includes("ajouterNouvelleBouteilleCellierPrive") == true) {
-      console.log(window.location.search);
+      console.log(window.location.search.substring(window.location.pathname.lastIndexOf('/')));
       console.log(currentRequete.includes("ajouterNouvelleBouteilleCellierPrive"));
       
       let btn = this.document.querySelector("#ajoutPrive"); // [data-js-submit]      
