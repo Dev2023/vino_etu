@@ -7,11 +7,11 @@
 
 
 	//Local
-	define("BASEURL", "");
+	//define("BASEURL", "");
 	define('HOST', 'localhost');
 	define('USER', 'root');
 	define('PASSWORD', '');
-	define('DATABASE', 'vinodb');
+	define('DATABASE', 'vinodbcurrent2');
 
 
 	//Herbergeur
