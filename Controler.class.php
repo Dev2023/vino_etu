@@ -266,9 +266,9 @@ class Controler
 			$resultat = $bte->ajouterBouteilleCellier($body);
 			echo json_encode($resultat);
 		} else {
-			 $cellier = new Cellier();
-			$id_usager = $_SESSION['usager'][0]['id'];
-			$data = $cellier->getListeCelliers($id_usager);
+			$id_cellier = $_GET['id'];
+			$cellier = new Cellier();
+			$datacell = $cellier->getcellier($id_cellier);
 			include("vues/entete.php");
 			include("vues/ajouter.php");
 			include("vues/pied.php");
