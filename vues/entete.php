@@ -17,6 +17,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	<base href="<?php echo BASEURL; ?>">
 	<script src="./js/main.js"></script>
+	<script src="./js/validationForm.js"></script>
 	<!-- <script src="./js/plugins.js"></script> -->
 	<!--<script src="./js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>-->
 </head>

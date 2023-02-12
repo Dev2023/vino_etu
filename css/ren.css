@@ -3,6 +3,14 @@ red = #73162F
 beige = F1F2D8
 card = rgb(214, 214, 202)
 */
+
+a:link{
+	text-decoration: none;
+}
+.btnmodprofil{
+	text-align: center;
+	max-width: 60px;
+}
 .wrapajout{
 	display: flex;
 	justify-content: center;

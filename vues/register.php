@@ -12,11 +12,14 @@
 
     <div class="form-style-8">
   <h2>Création de compte</h2>
-  <form action="?requete=register" method="post">
+  <form data-js-form-register action="?requete=register" method="post">
     <input type="text" name="nom" placeholder="Nom" />
+    <div class="error-message"></div>
     <input type="email" name="email" placeholder="Email" />
+    <div class="error-message"></div>
     <input type="password" name="mdp" placeholder="Mot de passe" />
-    <button type="submit" class="top button-28">S'inscrire</button>
+    <div class="error-message"></div>
+    <button data-js-submit type="submit" class="top button-28">S'inscrire</button>
   </form>
 </div>
 

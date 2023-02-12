@@ -11,13 +11,8 @@
 
 
 //const BaseURL = "https://vino-etu.000webhostapp.com/";
-//const BaseURL = "http://localhost:8080/vino_etu/";
-const BaseURL = "http://localhost/vino_etu/";
+const BaseURL = "http://localhost:8080/vino_etu/";
 
-
-
-//import Validation from "./validation.js";
-/* import ValidateForm from "./ValidateForm.js"; */
 
 window.addEventListener('load', function () {
 
