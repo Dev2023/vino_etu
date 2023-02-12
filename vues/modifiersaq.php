@@ -24,7 +24,7 @@
             <input type="text" name="notes" value="<?= $data["notes"] ?>" />
             
             <input type="hidden" name="id" value="<?= $data["id"] ?>">
-            <div data-id="<?php echo $cellier['id'] ?>">
+            <div data-id="<?php echo $data['id_cellier'] ?>">
             <button type="submit" class="modifierBouteillesaq top button-28">Modifier ma bouteille</button>
             </div>
 

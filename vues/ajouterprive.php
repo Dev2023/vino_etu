@@ -17,9 +17,9 @@
             <span id="millesime" class="error-message"></span>            
             <input  type="number" name="millesime" placeholder="Entrez une année" />
             <span id="quantite" class="error-message"></span>
-            <input type="number" name="quantite" placeholder="Quantite" min="0" value="1"/>
+            <input type="number" name="quantite" placeholder="Quantite" min="0"/>
             <span id="prix_achat" class="error-message"></span>
-            <input type="text" name="prix_achat" placeholder="Prix"/>
+            <input type="number" name="prix_achat" placeholder="Prix"/>
             <span id="pays" class="error-message"></span>
             <input type="text" name="pays" placeholder="Pays" />
         </div>
@@ -49,8 +49,10 @@
 </div>
 <?php
 }else{
+    echo '<div style="text-align: center;">';
     echo '<h1>' . $succes. '</h1>';
     echo '<h2>Vous avez belle et bien ajoutez une nouvelle bouteille privé dans votre cellier</h2>';
     echo '<div data-id=' . $datacell[0]['id'] .'><button class="cellierid button-28">Accéder a votre cellier</button></div>';
+    echo '</div>';
 }
 ?>
