@@ -129,7 +129,7 @@ foreach ($data as $cle => $bouteille) {
                 <button class='btnBoiresaq icon' data-id="<?php echo $bouteille['vbsid'] ?>"><img src="/vino_etu/img/iconeBoire.png" alt="icone Boire"></button>    
             </div>
             <div>
-                <form action="?requete=deleteSAQ" method="post">
+                <form action="?requete=deleteSAQ&id=<?= $datacell[0]['id']?>" method="post">
                     <button class="icon" type="submit"><img src="/vino_etu/img/iconeSupp.png" alt="icone Boire"></button>
                     <input type="hidden" name="id" value="<?php echo $bouteille['id_bouteille'] ?>" />
                 </form>
@@ -145,8 +145,10 @@ foreach ($data as $cle => $bouteille) {
 </div>
 <?php
 }else{
+    echo '<div style="text-align: center;">';
     echo '<h1>' . $succes. '</h1>';
     echo '<h2>Vous avez supprimé une bouteille</h2>';    
-    echo '<div data-id=' . $datacell[0]['id'] .'><button class="cellierid button-28">Accéder a votre cellier</button></div>';   
+    echo '<div data-id=' . $datacell[0]['id'] .'><button class="cellierid button-28">Accéder a votre cellier</button></div>'; 
+    echo '</div>';  
 }
 ?>
